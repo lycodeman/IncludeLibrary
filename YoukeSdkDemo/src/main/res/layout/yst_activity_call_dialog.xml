@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/yst_layout_btns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#00000000"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/yst_btn_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yst_btn_white"
+            android:clickable="true"
+            android:gravity="center"
+            android:minHeight="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:text="拨打"
+            android:textColor="#157efb" />
+
+       <!--  <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:background="@color/yst_line" /> -->
+
+        
+
+        <Button
+            android:id="@+id/yst_btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yst_btn_white"
+            android:clickable="true"
+            android:gravity="center"
+            android:minHeight="45dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="取消"
+            android:textColor="#157efb" />
+    </LinearLayout>
+
+</RelativeLayout>

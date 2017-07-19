@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yst_rl_endsession_end"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@color/yst_transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#F5F4F9"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+ <!-- 图片会透明，这个不会 -->
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/yst_line" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+            android:background="@color/yst_line" />
+        <!-- title -->
+
+        <Button
+            android:id="@+id/yst_endsession_check"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/yst_selector_white_bg"
+            android:gravity="center"
+            android:hint="评价后结束会话"
+            android:textColor="@color/yst_gray"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/yst_line" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+            android:background="@color/yst_line" />
+
+        <Button
+            android:id="@+id/yst_endsession_end"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/yst_selector_white_bg"
+            android:gravity="center"
+            android:hint="立即结束会话"
+            android:textColor="@color/yst_gray"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/yst_line" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="9dp"
+            android:background="@color/yst_line" />
+
+        <Button
+            android:id="@+id/yst_endsession_return"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/yst_selector_white_bg"
+            android:gravity="center"
+            android:hint="取消"
+            android:textColor="@color/yst_gray"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yst_view_divide"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/yst_chat_bg"
+    android:orientation="vertical" >
+
+    <!-- 线条 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/yst_line_left"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/yst_ll_layout"
+            android:background="@color/yst_line" />
+
+        <View
+            android:id="@+id/yst_line_right"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/yst_ll_layout"
+            android:background="@color/yst_line" />
+
+        <LinearLayout
+            android:id="@+id/yst_ll_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/yst_txt_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingBottom="3dip"
+                android:paddingTop="3dip"
+                android:text="客服已经结束本次会话，请您对本次会话进行"
+                android:textColor="@color/yst_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/yst_txt_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="3dip"
+                android:paddingRight="5dip"
+                android:paddingTop="3dip"
+                android:text="留言"
+                android:textColor="@color/yst_red"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

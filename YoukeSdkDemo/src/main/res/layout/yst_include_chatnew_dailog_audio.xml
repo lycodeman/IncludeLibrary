@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/yst_chat_container_audio"
+        android:layout_width="150dip"
+        android:layout_height="150dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="250"
+        android:background="@drawable/yst_chat_audio_bg_rect"
+        android:orientation="vertical" >
+ <!-- 图片会透明，这个不会 -->
+
+
+        <!-- icon audio -->
+
+        <RelativeLayout
+            android:id="@+id/layout_1"
+            android:layout_width="fill_parent"
+            android:layout_height="100dip"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" >
+			<ImageView 
+			    android:id="@+id/iv_audio_cancel"
+			    android:layout_width="fill_parent"
+			    android:layout_height="match_parent"
+			    android:scaleType="centerInside"
+			    android:visibility="gone"
+			    android:src="@drawable/yst_chat_iv_audio_cancel"/>
+            <ImageView
+                android:id="@+id/iv_audio"
+                android:layout_width="50dp"
+                android:layout_height="75dip"
+                android:layout_centerVertical="true"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dip"
+                android:layout_marginTop="10dip"
+                android:src="@drawable/yst_chat_iv_chat_audio" />
+
+            <ImageView
+                android:id="@+id/iv_audio_block"
+                android:layout_width="30dip"
+                android:layout_height="60dip"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="18dip"
+                android:layout_marginRight="38dip"
+                android:background="@drawable/yst_chat_iv_audio_5" />
+        </RelativeLayout>
+
+        <!-- 标题 -->
+
+        <TextView
+            android:id="@+id/txt_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:paddingBottom="4dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip"
+            android:paddingTop="4dip"
+            android:text="手指上滑，取消发送"
+            android:textColor="@color/yst_white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

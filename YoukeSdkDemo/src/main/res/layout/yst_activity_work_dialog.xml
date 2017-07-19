@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_gravity="center"
+        android:background="@color/yst_white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="暂无在线人员，请留言"
+                android:textColor="@color/yst_black"
+                android:textSize="14sp" />
+            <ImageView 
+                android:id="@+id/yst_iv_cancel"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                android:background="@drawable/yst_selector_white_bg"
+                android:scaleType="center"
+                android:src="@drawable/yst_btn_cancel"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/yst_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="邮箱*"
+            android:textColor="@color/yst_black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/yst_et_email"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/yst_chat_input_bg"
+            android:gravity="left|center"
+            android:hint="请输入联系邮箱"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="5dip"
+            android:text=""
+            android:textColor="@color/yst_black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="电话"
+            android:textColor="@color/yst_black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/yst_et_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/yst_chat_input_bg"
+            android:gravity="left|center"
+            android:hint="手机或座机（格式为:010-88888888）"
+            android:inputType="phone"
+            android:paddingLeft="5dip"
+            android:text=""
+            android:textColor="@color/yst_black"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="留言内容*"
+                android:textColor="@color/yst_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="限制100字以内"
+                android:textColor="@color/yst_line"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/yst_et_content"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/yst_edit_white"
+            android:gravity="left|top"
+            android:hint="@string/yst_input_content"
+            android:padding="5dp"
+            android:maxLength="100"
+            android:textColor="@color/yst_black"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/yst_btn_submit"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/yst_btn_orange"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="提交"
+                android:layout_margin="20dp"
+                android:textColor="@color/yst_white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+

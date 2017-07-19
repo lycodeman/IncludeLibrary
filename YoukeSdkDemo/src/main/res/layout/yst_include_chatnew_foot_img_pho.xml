@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yst_layout_imgpho_all"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/yst_white"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingTop="1dip" >
+
+   
+
+    <!-- 拍摄 -->
+
+    <LinearLayout
+        android:id="@+id/yst_layout_pho"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@drawable/yst_chat_iv_pho" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="拍摄"
+            android:textColor="@color/yst_gray"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <View 
+        android:layout_width="50dp"
+        android:layout_height="1dp"/>
+ <!-- 照片 -->
+
+    <LinearLayout
+        android:id="@+id/yst_layout_img"
+        android:layout_width="80dip"
+        android:layout_height="131dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@drawable/yst_chat_iv_img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="照片"
+            android:textColor="@color/yst_gray"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <!-- 位置 -->
+	
+    <LinearLayout
+        android:id="@+id/yst_layout_pos"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@drawable/yst_chat_iv_pos" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="位置"
+            android:textColor="@color/yst_gray"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <!-- 语音 -->
+
+    <LinearLayout
+        android:id="@+id/yst_layout_sound"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@drawable/yst_chat_iv_audio" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="小视频"
+            android:textColor="@color/yst_gray"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</LinearLayout>

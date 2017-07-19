@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yst_layout_audio"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="-1.5dp"
+    android:paddingBottom="1dp"
+    android:background="@color/yst_white" >
+
+    <ImageView
+        android:id="@+id/yk_btn_key_audio"
+        android:layout_width="31dip"
+        android:layout_height="31dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:gravity="center"
+        android:src="@drawable/yst_chatnew_iv_boardkey" />
+
+    <ImageView
+        android:id="@+id/yk_btn_more_audio"
+        android:layout_width="31dip"
+        android:layout_height="31dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="17dip"
+        android:layout_marginTop="12dip"
+        
+        android:gravity="center"
+        android:src="@drawable/yst_chatnew_iv_more" />
+
+    <TextView
+        android:id="@+id/btn_audio_center"
+        android:layout_width="fill_parent"
+        android:layout_height="33dip"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="6dip"
+        android:layout_toLeftOf="@id/yk_btn_more_audio"
+        android:layout_toRightOf="@id/yk_btn_key_audio"
+        android:background="@drawable/yst_audio_pressed_bg"
+        android:gravity="center"
+        android:paddingBottom="3dip"
+        android:paddingTop="3dip"
+        android:text="按住 说话"
+        android:textColor="@color/yst_black"
+        android:textSize="16sp" />
+
+</RelativeLayout>

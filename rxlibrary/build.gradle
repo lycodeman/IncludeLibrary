@@ -1,0 +1,63 @@
+apply plugin: 'com.android.library'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.0"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    //引入java8
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.+'
+    testCompile 'junit:junit:4.12'
+    /*-------------rxjava2--------------*/
+    compile 'io.reactivex.rxjava2:rxjava:2.0.2'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    /*-------------retrofit2--------------*/
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    /*-------------retrofit2---gson--------------*/
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    /*-------------retrofit2---adapter-----------*/
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    /*-------------rxlifecycle2-----------------*/
+    //    compile 'com.trello.rxlifecycle2:rxlifecycle:2.1.0'//基础库
+    //    compile 'com.trello.rxlifecycle2:rxlifecycle-android:2.1.0'//android库，包含基础哭
+    compile 'com.trello.rxlifecycle2:rxlifecycle-components:2.1.0'
+    //包含前两个
+    compile 'com.android.support:design:26.0.0-alpha1'
+    /*-------------rxbinding--------------*/
+    compile 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+    compile 'com.jakewharton.rxbinding2:rxbinding-support-v4:2.0.0'
+    compile 'com.jakewharton.rxbinding2:rxbinding-appcompat-v7:2.0.0'
+    compile 'com.jakewharton.rxbinding2:rxbinding-design:2.0.0'
+    compile 'com.jakewharton.rxbinding2:rxbinding-recyclerview-v7:2.0.0'
+    /*------------------logger-------------------*/
+    compile 'com.orhanobut:logger:2.1.1'
+    compile files('libs/bugly_crash_release.jar')
+}
